@@ -14,4 +14,4 @@ cd laradock
 docker-compose build workspace
 docker-compose build nginx
 docker-compose up -d nginx
-    
+      
