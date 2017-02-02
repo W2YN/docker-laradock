@@ -11,5 +11,3 @@ sudo chmod +x /usr/bin/docker-compose
 #git clone https://github.com/LaraDock/laradock.git
 unzip laradock.zip
 cd laradock && docker-compose up -d nginx
-  
-#yoyohaha
