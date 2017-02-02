@@ -8,7 +8,10 @@ curl -L https://github.com/docker/compose/releases/download/1.7.0/docker-compose
 sudo mv ./docker-compose /usr/bin/docker-compose
 sudo chmod +x /usr/bin/docker-compose
 
-#git clone https://github.com/LaraDock/laradock.git
-unzip laradock.zip
-cd laradock && docker-compose up -d nginx
+git clone https://github.com/LaraDock/laradock.git
+cp docker-compose.yml laradock/docker-compose.yml
+cd laradock 
+docker-compose build workspace
+docker-compose build nginx
+docker-compose up -d nginx
    
